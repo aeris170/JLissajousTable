@@ -13,7 +13,8 @@ This program draws numerous lissajous curves onto the screen.
 
 ## Usage
 
-- Launch the jar file. Press Mouse1 to exit, Mouse3 to reset the drawing. Use mouse wheel to control the zoom. Warning: Low zoom levels may lag!
+- Launch the jar file. Press Mouse1 to exit, Mouse3 to reset the drawing. Use mouse wheel to control the zoom.
+- Warning: Low zoom levels may lag!
 
 ## Screenshots
 ![lissajous_1](https://user-images.githubusercontent.com/25724155/60520178-9b685900-9ced-11e9-8357-c04edc6fc414.png)
