@@ -1,7 +1,6 @@
 package main;
 
 import java.awt.BasicStroke;
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.geom.GeneralPath;
@@ -31,7 +30,7 @@ public class Curve {
 	}
 
 	public void show(final Graphics2D g2d) {
-		g2d.setColor(Color.WHITE);
+		g2d.setColor(Colors.getNextColor());
 		g2d.setStroke(new BasicStroke(1));
 		final GeneralPath polyline = new GeneralPath(Path2D.WIND_EVEN_ODD, path.size());
 		polyline.moveTo(path.get(0).x, path.get(0).y);

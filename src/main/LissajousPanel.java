@@ -14,10 +14,10 @@ import javax.swing.JPanel;
 
 public class LissajousPanel extends JPanel {
 
-	private static final long serialVersionUID = 7482055619892226429L;
+	private static final long serialVersionUID = 1L;
 
 	private static final double HALF_PI = Math.PI / 2;
-	private static final Color TRANSLUCENT_WHITE = new Color(255, 255, 255, 150);
+	private static final Color LINE_COLOR = new Color(255, 255, 255, 150);
 
 	private Dimension parentSize;
 
@@ -51,34 +51,36 @@ public class LissajousPanel extends JPanel {
 		if (!renderingComplete) {
 			final float d = w * 0.8f;
 			final float r = d / 2;
+			Colors.reset();
 			for (int i = 0; i < cols; i++) {
 				final float cx = w + i * w + w / 2f;
 				final float cy = w / 2f;
 				g2d.setStroke(new BasicStroke(1));
-				g2d.setColor(Color.WHITE);
+				g2d.setColor(Colors.getNextColor());
 				g2d.drawOval((int) (cx - d / 2), (int) (cy - d / 2), (int) d, (int) d);
 				final float x = (float) (r * Math.cos(Math.toRadians(angle * (i + 1)) - HALF_PI));
 				final float y = (float) (r * Math.sin(Math.toRadians(angle * (i + 1)) - HALF_PI));
 				g2d.setStroke(new BasicStroke(8));
 				g2d.drawOval((int) (cx + x) - 1, (int) (cy + y) - 1, 2, 2);
-				g2d.setColor(TRANSLUCENT_WHITE);
+				g2d.setColor(LINE_COLOR);
 				g2d.setStroke(new BasicStroke(1));
 				g2d.drawLine((int) (cx + x), 0, (int) (cx + x), parentSize.height);
 				for (int j = 0; j < rows; j++) {
 					curves[j][i].setX(cx + x);
 				}
 			}
+			Colors.reset();
 			for (int j = 0; j < rows; j++) {
 				final float cx = w / 2f;
 				final float cy = w + j * w + w / 2f;
 				g2d.setStroke(new BasicStroke(1));
-				g2d.setColor(Color.WHITE);
+				g2d.setColor(Colors.getNextColor());
 				g2d.drawOval((int) (cx - d / 2), (int) (cy - d / 2), (int) d, (int) d);
 				final float x = (float) (r * Math.cos(Math.toRadians(angle * (j + 1)) - HALF_PI));
 				final float y = (float) (r * Math.sin(Math.toRadians(angle * (j + 1)) - HALF_PI));
 				g2d.setStroke(new BasicStroke(8));
 				g2d.drawOval((int) (cx + x) - 1, (int) (cy + y) - 1, 2, 2);
-				g2d.setColor(TRANSLUCENT_WHITE);
+				g2d.setColor(LINE_COLOR);
 				g2d.setStroke(new BasicStroke(1));
 				g2d.drawLine(0, (int) (cy + y), parentSize.width, (int) (cy + y));
 				for (int i = 0; i < cols; i++) {
@@ -91,6 +93,10 @@ public class LissajousPanel extends JPanel {
 				}
 			}
 			angle -= 1;
+		}
+		if (renderingComplete) { // for consistent random colors, very bad design!! :D
+			Colors.reset();
+			Colors.set(rows);
 		}
 		for (int j = 0; j < rows; j++) {
 			for (int i = 0; i < cols; i++) {

@@ -10,7 +10,7 @@ import javax.swing.WindowConstants;
 
 public class Window extends JFrame {
 
-	private static final long serialVersionUID = -4810618286807932601L;
+	private static final long serialVersionUID = 1L;
 
 	public static final GraphicsDevice FIRST_MONITOR = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()[0];
 	public static final Dimension SCREEN_SIZE = Toolkit.getDefaultToolkit().getScreenSize();
