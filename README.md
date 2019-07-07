@@ -17,7 +17,7 @@ This program draws numerous lissajous curves onto the screen.
 - Warning: Low zoom levels may lag!
 
 ## Screenshots
-![lissajous_1](https://user-images.githubusercontent.com/25724155/60763359-97389480-a07b-11e9-96c9-bbb9dda8ea1f.png)
-![lissajous_2](https://user-images.githubusercontent.com/25724155/60763360-97d12b00-a07b-11e9-99c2-a84e0caaec98.png)
-![lissajous_3](https://user-images.githubusercontent.com/25724155/60763361-97d12b00-a07b-11e9-86aa-bbb8f3e01619.png)
-![lissajous_4](https://user-images.githubusercontent.com/25724155/60763362-97d12b00-a07b-11e9-98f1-3ed4bdf0c1ca.png)
+![lissajous_1](https://user-images.githubusercontent.com/25724155/60771147-241b3680-a0ec-11e9-900d-3ef1d9b11414.png)
+![lissajous_2](https://user-images.githubusercontent.com/25724155/60771149-241b3680-a0ec-11e9-8bba-45953a584e47.png)
+![lissajous_3](https://user-images.githubusercontent.com/25724155/60771150-241b3680-a0ec-11e9-8b44-c62fc9cd0093.png)
+![lissajous_4](https://user-images.githubusercontent.com/25724155/60771151-24b3cd00-a0ec-11e9-989d-a5e58f65372d.png)
