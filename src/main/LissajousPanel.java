@@ -69,7 +69,9 @@ public class LissajousPanel extends JPanel {
 			g2d.setColor(Colors.getNextColor());
 			g2d.drawString("MWHEEL to zoom in/out", 0, height * 3);
 			g2d.setColor(Colors.getNextColor());
-			g2d.drawString("SPACE to show/hide this", 0, height * 4);
+			g2d.drawString("Current zoom: " + w, 0, height * 4);
+			g2d.setColor(Colors.getNextColor());
+			g2d.drawString("SPACE to show/hide this", 0, height * 5);
 		}
 
 		if (!isRenderingComplete) {
