@@ -29,9 +29,13 @@ public class Curve {
 		path.clear();
 	}
 
-	public void show(final Graphics2D g2d) {
+	public void show(final Graphics2D g2d, final boolean isDashEnabled, final float dashPhase) {
 		g2d.setColor(Colors.getNextColor());
-		g2d.setStroke(new BasicStroke(1));
+		if (isDashEnabled) {
+			g2d.setStroke(new BasicStroke(1, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND, 1.0f, new float[] { 10, 5 }, dashPhase));
+		} else {
+			g2d.setStroke(new BasicStroke(1));
+		}
 		final GeneralPath polyline = new GeneralPath(Path2D.WIND_EVEN_ODD, path.size());
 		polyline.moveTo(path.get(0).x, path.get(0).y);
 		for (int i = 1; i < path.size(); i++) {
