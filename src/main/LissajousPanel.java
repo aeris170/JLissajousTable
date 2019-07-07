@@ -31,7 +31,7 @@ public class LissajousPanel extends JPanel {
 	float angle = 0;
 	// try changing this and see what happens. Recommended: 20, 80, 120, 200. Use
 	// the Mouse Wheel.
-	int w = 200;
+	int w = 210;
 	int cols;
 	int rows;
 	transient Curve[][] curves;
