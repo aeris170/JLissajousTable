@@ -13,8 +13,19 @@ This program draws numerous lissajous curves onto the screen.
 
 ## Usage
 
-- Launch the jar file. Press Mouse1 to exit, Mouse3 to reset the drawing. Use mouse wheel to control the zoom.
-- Warning: Low zoom levels may lag!
+- Launch the jar file.
+
+### Controls 
+- ESC or LMB: EXIT
+- RMB: Restart Render
+- MWHEEL: Zoom +/-
+- Q: Change Quality
+- D: Toggle Dashed Render
+- UP/DOWN Arrow: Change Dash Speed
+- SPACE: Show/Hide Text
+
+### Warning
+- Low zoom levels may cause HUGE lag!
 
 ## Screenshots
 ### While Rendering
