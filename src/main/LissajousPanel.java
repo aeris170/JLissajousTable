@@ -26,7 +26,7 @@ public class LissajousPanel extends JPanel {
 	private static final Font TEXT_FONT = new Font("Courier New", Font.BOLD, 20);
 
 	private Dimension parentSize;
-	private Listener l = new Listener();
+	private transient Listener l = new Listener();
 
 	float angle = 0;
 	// try changing this and see what happens. Recommended: 20, 80, 120, 200. Use
@@ -46,9 +46,7 @@ public class LissajousPanel extends JPanel {
 		parentSize = Window.SCREEN_SIZE;
 		init();
 
-		new Timer(1, e -> {
-			dashPhase += dashSpeed;
-		}).start();
+		new Timer(1, e -> dashPhase += dashSpeed).start();
 		setFocusable(true);
 		requestFocusInWindow();
 		setBackground(Color.BLACK);
