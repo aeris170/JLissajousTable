@@ -17,7 +17,12 @@ This program draws numerous lissajous curves onto the screen.
 - Warning: Low zoom levels may lag!
 
 ## Screenshots
-![lissajous_1](https://user-images.githubusercontent.com/25724155/60771147-241b3680-a0ec-11e9-900d-3ef1d9b11414.png)
-![lissajous_2](https://user-images.githubusercontent.com/25724155/60771149-241b3680-a0ec-11e9-8bba-45953a584e47.png)
-![lissajous_3](https://user-images.githubusercontent.com/25724155/60771150-241b3680-a0ec-11e9-8b44-c62fc9cd0093.png)
-![lissajous_4](https://user-images.githubusercontent.com/25724155/60771151-24b3cd00-a0ec-11e9-989d-a5e58f65372d.png)
+### While Rendering
+![lissajous_1](https://user-images.githubusercontent.com/25724155/60771188-bfaca700-a0ec-11e9-831e-9c676f819358.png)
+![lissajous_3](https://user-images.githubusercontent.com/25724155/60771192-c0453d80-a0ec-11e9-9757-10f90aa80593.png)
+###  Lissajous Figures
+![lissajous_2](https://user-images.githubusercontent.com/25724155/60771190-bfaca700-a0ec-11e9-8d6b-cac702fdcb88.png)
+![lissajous_4](https://user-images.githubusercontent.com/25724155/60771193-c0453d80-a0ec-11e9-8ed6-eebf468064b3.png)
+## Dashed Lissajous Figures
+![lissajous_1_dashed](https://user-images.githubusercontent.com/25724155/60771189-bfaca700-a0ec-11e9-8256-40eac7d0149e.png)
+![lissajous_2_dashed](https://user-images.githubusercontent.com/25724155/60771191-c0453d80-a0ec-11e9-9b89-6aadb8824db8.png)
