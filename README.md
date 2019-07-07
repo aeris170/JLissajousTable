@@ -20,7 +20,7 @@ This program draws numerous lissajous curves onto the screen.
 ### While Rendering
 ![lissajous_1](https://user-images.githubusercontent.com/25724155/60771188-bfaca700-a0ec-11e9-831e-9c676f819358.png)
 ![lissajous_3](https://user-images.githubusercontent.com/25724155/60771192-c0453d80-a0ec-11e9-9757-10f90aa80593.png)
-###  Lissajous Figures
+### Complete Lissajous Figures
 ![lissajous_2](https://user-images.githubusercontent.com/25724155/60771190-bfaca700-a0ec-11e9-8d6b-cac702fdcb88.png)
 ![lissajous_4](https://user-images.githubusercontent.com/25724155/60771193-c0453d80-a0ec-11e9-8ed6-eebf468064b3.png)
 ## Dashed Lissajous Figures
