@@ -1,4 +1,5 @@
 # JLissajousTable
+![social](https://repository-images.githubusercontent.com/194878242/220ba480-a0f9-11e9-97c7-1dd3e1dbaf7b)
 
 This program draws numerous lissajous curves onto the screen.
 
